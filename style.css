@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    box-shadow: inset 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+/* Button Click Effects */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Special Button Colors */
+.operator { background: #ff9500; }
+.operator:hover { background: #e08900; }
+
+.equal { background: #00cc66; }
+.equal:hover { background: #00b359; }
+
+.clear { background: #cc0000; }
+.clear:hover { background: #b30000; }
